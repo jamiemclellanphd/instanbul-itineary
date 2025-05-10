@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istanbul 2-Day Cruise Itinerary - May 20-21, 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        .timeline-container {
+            position: relative;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 12px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #3B82F6;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 24px;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            background-color: #3B82F6;
+        }
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .collapsible-content.active {
+            max-height: 1000px;
+        }
+        .highlight {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3B82F6;
+        }
+        .tab {
+            cursor: pointer;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .map-container {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-blue-700 text-white py-6 sticky-header">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-center">Istanbul 2-Day Cruise Itinerary</h1>
+            <p class="text-center text-xl mt-2">May 20-21, 2025</p>
+            
+            <!-- Navigation menu -->
+            <nav class="mt-4 no-print">
+                <ul class="flex flex-wrap justify-center space-x-1 md:space-x-4">
+                    <li><a href="#overview" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Overview</a></li>
+                    <li><a href="#map" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Map</a></li>
+                    <li><a href="#day1" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Day 1</a></li>
+                    <li><a href="#day2" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Day 2</a></li>
+                    <li><a href="#transport" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Transportation</a></li>
+                    <li><a href="#tips" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+        <!-- Overview Section -->
+        <section id="overview" class="mb-10">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Trip Overview</h2>
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/3 pr-0 md:pr-4">
+                        <div class="highlight p-4 mb-4">
+                            <h3 class="font-bold text-lg">Cruise Port Information</h3>
+                            <p>Your ship will dock at <strong>Galataport Istanbul</strong>, the main cruise terminal located in the Karaköy neighborhood. This modern terminal is conveniently located near many transportation options.</p>
+                        </div>
+                        
+                        <h3 class="font-bold text-lg">Itinerary Highlights</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <h4 class="font-bold text-blue-600">Day 1: Historical Peninsula</h4>
+                                <ul class="list-disc ml-5 mt-2">
+                                    <li>Hagia Sophia</li>
+                                    <li>Blue Mosque</li>
+                                    <li>Basilica Cistern</li>
+                                    <li>Topkapi Palace</li>
+                                    <li>Grand Bazaar</li>
+                                </ul>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <h4 class="font-bold text-blue-600">Day 2: Beyoglu & Modern Istanbul</h4>
+                                <ul class="list-disc ml-5 mt-2">
+                                    <li>Galata Tower</li>
+                                    <li>Istiklal Street</li>
+                                    <li>Cicek Pasaji (Lunch)</li>
+                                    <li>Taksim Square</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 mt-4 md:mt-0">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-lg">Important Details</h3>
+                            <ul class="mt-2 space-y-2">
+                                <li><i class="fas fa-ship text-blue-700 mr-2"></i> <strong>Arrival:</strong> May 20, 2025 at 8:00 AM</li>
+                                <li><i class="fas fa-ship text-blue-700 mr-2"></i> <strong>Departure:</strong> May 21, 2025 at 5:00 PM</li>
+                                <li><i class="fas fa-map-marker-alt text-blue-700 mr-2"></i> <strong>Port:</strong> Galataport Istanbul</li>
+                                <li><i class="fas fa-money-bill-wave text-blue-700 mr-2"></i> <strong>Currency:</strong> Turkish Lira (TL)</li>
+                                <li><i class="fas fa-language text-blue-700 mr-2"></i> <strong>Language:</strong> Turkish, English widely spoken</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map" class="mb-10">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Interactive Map</h2>
+                <p class="mb-4">Below is the map showing all the key locations included in our itinerary. Toggle between Day 1 and Day 2 to see the respective attractions.</p>
+                
+                <!-- Tab navigation -->
+                <div class="no-print flex border-b border-gray-200 mb-4">
+                    <div id="tab-overall" class="tab px-4 py-2 font-semibold border-b-2 border-blue-500">All Attractions</div>
+                    <div id="tab-day1" class="tab px-4 py-2 font-semibold">Day 1</div>
+                    <div id="tab-day2" class="tab px-4 py-2 font-semibold">Day 2</div>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="map-overall" class="tab-content active">
+                    <!-- Removed loading="lazy" here -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d12041.761881076904!2d28.966061243218997!3d41.00928845670203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e2!4m5!1s0x14cab991d49c51c1%3A0x84e5d259e6fd9244!2sGalataport%20Istanbul%2C%20Kemanke%C5%9F%20Karamustafapa%C5%9Fa%2C%20Galataport%20%C4%B0stanbul%2C%20Beyoglu%2FIstanbul%2C%20Turkey!3m2!1d41.0255631!2d28.983076!4m3!3m2!1d41.0166855!2d28.9833889!4m3!3m2!1d41.008431399999996!2d28.9778885!4m3!3m2!1d41.0063694!2d28.9768553!4m3!3m2!1d41.005859799999996!2d28.977045599999998!4m3!3m2!1d41.0061396!2d28.976972999999998!4m3!3m2!1d41.006372599999996!2d28.9769675!4m3!3m2!1d41.010683199999995!2d28.9680676!5e0!3m2!1sen!2sus!4v1644837725599!5m2!1sen!2sus"
+                        class="map-container border-0"
+                        allowfullscreen="">
+                    </iframe>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-600">Day 1 Attractions</h3>
+                            <ul class="list-disc ml-5 mt-2">
+                                <li><strong>Galataport Istanbul:</strong> Your cruise ship port</li>
+                                <li><strong>Hagia Sophia:</strong> Historic mosque/former cathedral</li>
+                                <li><strong>Blue Mosque:</strong> Sultan Ahmed Mosque</li>
+                                <li><strong>Basilica Cistern:</strong> Underground water reservoir</li>
+                                <li><strong>Topkapi Palace:</strong> Ottoman sultans' residence</li>
+                                <li><strong>Grand Bazaar:</strong> Historic covered market</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-600">Day 2 Attractions</h3>
+                            <ul class="list-disc ml-5 mt-2">
+                                <li><strong>Galata Tower:</strong> Medieval stone tower</li>
+                                <li><strong>Istiklal Street:</strong> Popular pedestrian street</li>
+                                <li><strong>Cicek Pasaji:</strong> Historic passage with restaurants</li>
+                                <li><strong>Taksim Square:</strong> Modern city center</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="map-day1" class="tab-content">
+                    <!-- Removed loading="lazy" here -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d6020.98107642693!2d28.975429574358045!3d41.00591237208533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e2!4m5!1s0x14cab991d49c51c1%3A0x84e5d259e6fd9244!2sGalataport%20Istanbul%2C%20Kemanke%C5%9F%20Karamustafapa%C5%9Fa%2C%20Galataport%20%C4%B0stanbul%2C%20Beyoglu%2FIstanbul%2C%20Turkey!3m2!1d41.0255631!2d28.983076!4m3!3m2!1d41.008431399999996!2d28.9778885!4m3!3m2!1d41.0063694!2d28.9768553!4m3!3m2!1d41.005859799999996!2d28.977045599999998!4m3!3m2!1d41.010683199999995!2d28.9680676!5e0!3m2!1sen!2sus!4v1644837725599!5m2!1sen!2sus"
+                        class="map-container border-0"
+                        allowfullscreen="">
+                    </iframe>
+                    <div class="mt-4">
+                        <h3 class="font-bold text-lg text-blue-600">Day 1: Historical Peninsula</h3>
+                        <p>The T1 tram line connects all these attractions. Take the tram from Tophane station near the cruise port to Sultanahmet station.</p>
+                        <div class="mt-2 p-3 bg-blue-50 rounded-lg">
+                            <p><i class="fas fa-info-circle text-blue-700 mr-2"></i> Sultanahmet district is compact and walkable. Most attractions are within 5-10 minutes walking distance of each other.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="map-day2" class="tab-content">
+                    <!-- Removed loading="lazy" here -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d3009.8180723795884!2d28.97407729362164!3d41.02596825664513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e2!4m5!1s0x14cab991d49c51c1%3A0x84e5d259e6fd9244!2sGalataport%20Istanbul%2C%20Kemanke%C5%9F%20Karamustafapa%C5%9Fa%2C%20Galataport%20%C4%B0stanbul%2C%20Beyoglu%2FIstanbul%2C%20Turkey!3m2!1d41.0255631!2d28.983076!4m3!3m2!1d41.028516299999996!2d28.9747453!4m3!3m2!1d41.0351401!2d28.977814199999998!4m3!3m2!1d41.036995899999996!2d28.9848113!5e0!3m2!1sen!2sus!4v1644837942532!5m2!1sen!2sus"
+                        class="map-container border-0"
+                        allowfullscreen="">
+                    </iframe>
+                    <div class="mt-4">
+                        <h3 class="font-bold text-lg text-blue-600">Day 2: Beyoglu & Modern Istanbul</h3>
+                        <p>This area is easily accessible from the cruise port. Galata Tower is just a 10-15 minute walk, and Istiklal Street connects to Taksim Square.</p>
+                        <div class="mt-2 p-3 bg-blue-50 rounded-lg">
+                            <p><i class="fas fa-info-circle text-blue-700 mr-2"></i> There's a historic red tram that runs along Istiklal Street, but the area is best explored on foot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 1 Itinerary -->
+        <section id="day1" class="mb-10">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Day 1: Historical Peninsula (May 20)</h2>
+                
+                <div class="timeline-container pl-10 relative">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Start of day -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">8:00 AM - Disembark from Cruise Ship</h3>
+                        <div class="mt-2">
+                            <p>Begin your day by disembarking from your cruise ship at Galataport Istanbul.</p>
+                            <div class="mt-3 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+                                <p><i class="fas fa-exclamation-triangle text-yellow-600 mr-2"></i> <strong>Important:</strong> Purchase an Istanbulkart at the port (130 TL) and load it with credit for public transportation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Transportation to Sultanahmet -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">8:15 AM - Travel to Sultanahmet</h3>
+                        <div class="mt-2">
+                            <p>Take the T1 tram from Tophane station (5-minute walk from cruise port) to Sultanahmet station.</p>
+                            <ul class="mt-2">
+                                <li><i class="fas fa-money-bill-wave text-green-600 mr-2"></i> <strong>Cost:</strong> 9.90 TL with Istanbulkart (25 TL single ticket)</li>
+                                <li><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Duration:</strong> Approximately 15-20 minutes</li>
+                            </ul>
+                            <div class="mt-2">
+                                <button class="collapsible flex items-center text-blue-700 hover:text-blue-900">
+                                    <i class="fas fa-plus-circle mr-2"></i> Transportation Options
+                                </button>
+                                <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                    <h4 class="font-bold">Alternative Options:</h4>
+                                    <ul class="mt-1">
+                                        <li><strong>Taxi:</strong> 150-200 TL (15-20 minutes depending on traffic)</li>
+                                        <li><strong>Walking:</strong> Not recommended (40-45 minutes)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hagia Sophia -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">8:45 AM - 10:30 AM: Hagia Sophia</h3>
+                        <div class="mt-2">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="md:col-span-2">
+                                    <p>Begin your exploration at this architectural masterpiece that has served as both church and mosque throughout history.</p>
+                                    <ul class="mt-3">
+                                        <li><i class="fas fa-ticket-alt text-purple-600 mr-2"></i> <strong>Entrance Fee:</strong> Free (functioning mosque)</li>
+                                        <li><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Hours:</strong> 9:00 AM - 7:00 PM (closed during prayer times)</li>
+                                        <li><i class="fas fa-info-circle text-green-600 mr-2"></i> <strong>Notes:</strong> Modest dress required; women need head covering</li>
+                                    </ul>
+                                    <button class="collapsible mt-3 flex items-center text-blue-700 hover:text-blue-900">
+                                        <i class="fas fa-plus-circle mr-2"></i> More About Hagia Sophia
+                                    </button>
+                                    <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                        <p>The Hagia Sophia was originally built as a cathedral in 537 AD under the Byzantine Empire. It later became a mosque after the Ottoman conquest of Constantinople in 1453, and in 2020 it was converted back to a mosque after serving decades as a museum.</p>
+                                        <p class="mt-2">Look for the famous Viking graffiti, magnificent dome, and beautiful Islamic calligraphy alongside Christian mosaics.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold">Visitor Tips</h4>
+                                    <ul class="mt-2 text-sm">
+                                        <li>🕒 Go early to avoid crowds</li>
+                                        <li>👗 Women: Bring a scarf for head covering</li>
+                                        <li>👞 Everyone must remove shoes before entering</li>
+                                        <li>📱 Photography is permitted except during prayer</li>
+                                        <li>🤫 Maintain respectful silence inside</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blue Mosque -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">10:45 AM - 11:45 AM: Blue Mosque</h3>
+                        <div class="mt-2">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="md:col-span-2">
+                                    <p>A short 5-minute walk across the square from Hagia Sophia. Known for its stunning blue tiles and Ottoman architecture.</p>
+                                    <ul class="mt-3">
+                                        <li><i class="fas fa-ticket-alt text-purple-600 mr-2"></i> <strong>Entrance Fee:</strong> Free</li>
+                                        <li><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Hours:</strong> 9:00 AM - 7:00 PM (closed during prayer times)</li>
+                                        <li><i class="fas fa-info-circle text-green-600 mr-2"></i> <strong>Notes:</strong> Modest dress required; women need head covering</li>
+                                    </ul>
+                                    <button class="collapsible mt-3 flex items-center text-blue-700 hover:text-blue-900">
+                                        <i class="fas fa-plus-circle mr-2"></i> More About Blue Mosque
+                                    </button>
+                                    <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                        <p>The Sultan Ahmed Mosque (Blue Mosque) was built between 1609 and 1616 during the rule of Ahmed I. It contains the tomb of its founder, and continues to function as a mosque today.</p>
+                                        <p class="mt-2">The mosque gets its nickname from the blue Iznik tiles adorning its interior walls. Notice the six minarets, unusual for Ottoman mosques which typically had two or four.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold">Visitor Tips</h4>
+                                    <ul class="mt-2 text-sm">
+                                        <li>⚠️ Check renovation schedule before visiting</li>
+                                        <li>👗 Women: Bring a scarf for head covering</li>
+                                        <li>👔 Men: No shorts above the knee</li>
+                                        <li>👞 Everyone must remove shoes before entering</li>
+                                        <li>🤲 Avoid visiting during prayer times</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Basilica Cistern -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">12:00 PM - 1:00 PM: Basilica Cistern</h3>
+                        <div class="mt-2">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="md:col-span-2">
+                                    <p>Visit this ancient underground water reservoir with its atmospheric lighting and famous Medusa head pillars.</p>
+                                    <ul class="mt-3">
+                                        <li><i class="fas fa-ticket-alt text-purple-600 mr-2"></i> <strong>Entrance Fee:</strong> 650-1000 TL (~$19-30)</li>
+                                        <li><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Hours:</strong> 9:00 AM - 10:00 PM daily</li>
+                                        <li><i class="fas fa-link text-green-600 mr-2"></i> <strong>Booking:</strong> Tickets available at entrance or online at <a href="https://yerebatan.com/en/" target="_blank" class="text-blue-600 hover:underline">yerebatan.com</a></li>
+                                    </ul>
+                                    <button class="collapsible mt-3 flex items-center text-blue-700 hover:text-blue-900">
+                                        <i class="fas fa-plus-circle mr-2"></i> More About Basilica Cistern
+                                    </button>
+                                    <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                        <p>The Basilica Cistern was built in the 6th century during the reign of Byzantine Emperor Justinian I. It's the largest surviving Byzantine cistern in Istanbul.</p>
+                                        <p class="mt-2">Don't miss the famous Medusa head columns at the northwest corner of the cistern. One head is upside down and the other is sideways, possibly because the builders repurposed materials from earlier Roman structures.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold">Visitor Tips</h4>
+                                    <ul class="mt-2 text-sm">
+                                        <li>🎟️ Book tickets in advance to avoid lines</li>
+                                        <li>📸 Bring a camera - lighting is dramatic</li>
+                                        <li>👟 Floors may be slippery - wear appropriate shoes</li>
+                                        <li>🧣 Bring a light jacket (cooler temperature inside)</li>
+                                        <li>⏱️ Allow 30-45 minutes for your visit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lunch -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">1:15 PM - 2:30 PM: Lunch at Queb Lounge</h3>
+                        <div class="mt-2">
+                            <p>Enjoy lunch at this rooftop venue offering delicious food, great drinks, and stunning views of Istanbul.</p>
+                            <ul class="mt-3">
+                                <li><i class="fas fa-map-marker-alt text-red-600 mr-2"></i> <strong>Location:</strong> Near Sultanahmet Square</li>
+                                <li><i class="fas fa-money-bill-wave text-green-600 mr-2"></i> <strong>Price Range:</strong> 400-800 TL (~$12-25) per person</li>
+                                <li><i class="fas fa-star text-yellow-400 mr-2"></i> <strong>Highlights:</strong> Rooftop views, hear the call to prayers during your meal</li>
+                            </ul>
+                            <div class="mt-2 p-3 bg-blue-50 rounded-lg">
+                                <p><i class="fas fa-utensils text-blue-700 mr-2"></i> <strong>Menu Recommendations:</strong> Try Turkish mezze platters, kebabs, or fresh seafood options.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Topkapi Palace -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">2:45 PM - 4:30 PM: Topkapi Palace</h3>
+                        <div class="mt-2">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="md:col-span-2">
+                                    <p>Spend your afternoon exploring this vast complex that served as the residence of Ottoman sultans for nearly 400 years.</p>
+                                    <ul class="mt-3">
+                                        <li><i class="fas fa-ticket-alt text-purple-600 mr-2"></i> <strong>Entrance Fee:</strong> 750 TL (~$22) + 750 TL (~$22) for Harem section</li>
+                                        <li><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Hours:</strong> 9:00 AM - 6:00 PM (closed Tuesdays)</li>
+                                        <li><i class="fas fa-link text-green-600 mr-2"></i> <strong>Booking:</strong> Tickets at entrance or online at <a href="https://www.muzekart.com" target="_blank" class="text-blue-600 hover:underline">muzekart.com</a></li>
+                                    </ul>
+                                    <button class="collapsible mt-3 flex items-center text-blue-700 hover:text-blue-900">
+                                        <i class="fas fa-plus-circle mr-2"></i> More About Topkapi Palace
+                                    </button>
+                                    <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                        <p>Topkapi Palace was the primary residence of Ottoman sultans from 1465 to 1856. The palace complex consists of four main courtyards and numerous smaller buildings.</p>
+                                        <p class="mt-2">Highlights include the Imperial Treasury containing the 86-carat Spoonmaker's Diamond, the Holy Relics section housing items believed to belong to Prophet Muhammad, and the famous palace kitchens.</p>
+                                        <p class="mt-2">The Harem (separate ticket) was the private quarters of the sultan and his family. It contains over 400 rooms, including the sultan's and queen mother's apartments.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold">Visitor Tips</h4>
+                                    <ul class="mt-2 text-sm">
+                                        <li>💰 Consider Museum Pass Istanbul (2500 TL) if visiting multiple sites</li>
+                                        <li>👑 The Harem requires a separate ticket but is worth it</li>
+                                        <li>🕝 Allow at least 2 hours to explore properly</li>
+                                        <li>🏞️ Don't miss the views from the Fourth Courtyard</li>
+                                        <li>📱 Audio guides available (extra fee)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Grand Bazaar -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">4:45 PM - 6:30 PM: Grand Bazaar</h3>
+                        <div class="mt-2">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="md:col-span-2">
+                                    <p>One of the world's largest and oldest covered markets with over 4,000 shops. Explore the labyrinth of shops selling everything from spices to textiles, jewelry, and souvenirs.</p>
+                                    <ul class="mt-3">
+                                        <li><i class="fas fa-ticket-alt text-purple-600 mr-2"></i> <strong>Entrance Fee:</strong> Free</li>
+                                        <li><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Hours:</strong> 8:30 AM - 7:00 PM (closed Sundays)</li>
+                                        <li><i class="fas fa-map-marker-alt text-red-600 mr-2"></i> <strong>Getting There:</strong> 10-minute walk from Topkapi Palace or T1 tram to Beyazit station</li>
+                                    </ul>
+                                    <button class="collapsible mt-3 flex items-center text-blue-700 hover:text-blue-900">
+                                        <i class="fas fa-plus-circle mr-2"></i> More About Grand Bazaar
+                                    </button>
+                                    <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                        <p>The Grand Bazaar dates back to 1455 and houses over 4,000 shops spread across 61 covered streets. It attracts between 250,000-400,000 visitors daily.</p>
+                                        <p class="mt-2">Popular items to shop for include Turkish carpets, ceramics, lamps, spices, leather goods, gold jewelry, and textile products. The bazaar is organized by product categories, with different sections dedicated to specific goods.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold">Shopping Tips</h4>
+                                    <ul class="mt-2 text-sm">
+                                        <li>💬 Haggling is expected - start at 40-50% of asking price</li>
+                                        <li>💳 Major credit cards accepted at most shops</li>
+                                        <li>🏪 Note shop numbers if you want to return later</li>
+                                        <li>🧠 Don't feel pressured to buy</li>
+                                        <li>🚶‍♂️ Enter through Gate 1 (Beyazıt) for easier navigation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Evening -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">7:00 PM: Return to Ship or Explore Karaköy</h3>
+                        <div class="mt-2">
+                            <p>Return to your cruise ship for dinner or explore the trendy Karaköy neighborhood near the port.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                                <div class="border border-gray-200 rounded-lg p-4">
+                                    <h4 class="font-bold">Return to Ship</h4>
+                                    <p class="mt-2">Take the T1 tram from Beyazit-Grand Bazaar station to Tophane station.</p>
+                                    <ul class="mt-2">
+                                        <li><i class="fas fa-money-bill-wave text-green-600 mr-2"></i> <strong>Cost:</strong> 9.90 TL with Istanbulkart</li>
+                                        <li><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Duration:</strong> 15-20 minutes</li>
+                                    </ul>
+                                </div>
+                                <div class="border border-gray-200 rounded-lg p-4">
+                                    <h4 class="font-bold">Nearby Evening Options</h4>
+                                    <ul class="mt-2">
+                                        <li><strong>Karaköy:</strong> Trendy cafés and restaurants</li>
+                                        <li><strong>Galata Bridge:</strong> Seafood restaurants with views</li>
+                                        <li><strong>Salt Galata:</strong> Art gallery and café</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Day 2 Itinerary -->
+        <section id="day2" class="mb-10">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Day 2: Beyoglu & Modern Istanbul (May 21)</h2>
+                
+                <div class="timeline-container pl-10 relative">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Start of day -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">9:00 AM - Disembark from Cruise Ship</h3>
+                        <div class="mt-2">
+                            <p>Begin your second day by disembarking from your cruise ship at Galataport Istanbul.</p>
+                            <div class="mt-3 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+                                <p><i class="fas fa-exclamation-triangle text-yellow-600 mr-2"></i> <strong>Important:</strong> Remember to bring your Istanbulkart from yesterday.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Galata Tower -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">9:15 AM - 10:30 AM: Galata Tower</h3>
+                        <div class="mt-2">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="md:col-span-2">
+                                    <p>Start your day with panoramic views of Istanbul from this medieval stone tower, just a short walk from the cruise port.</p>
+                                    <ul class="mt-3">
+                                        <li><i class="fas fa-walking text-green-600 mr-2"></i> <strong>Distance:</strong> 10-15 minute walk from cruise port</li>
+                                        <li><i class="fas fa-ticket-alt text-purple-600 mr-2"></i> <strong>Entrance Fee:</strong> 1060 TL (~$32)</li>
+                                        <li><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Hours:</strong> 8:30 AM - 10:00 PM daily</li>
+                                        <li><i class="fas fa-link text-green-600 mr-2"></i> <strong>Booking:</strong> Tickets at entrance or online at <a href="https://muze.gov.tr" target="_blank" class="text-blue-600 hover:underline">muze.gov.tr</a></li>
+                                    </ul>
+                                    <button class="collapsible mt-3 flex items-center text-blue-700 hover:text-blue-900">
+                                        <i class="fas fa-plus-circle mr-2"></i> More About Galata Tower
+                                    </button>
+                                    <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                        <p>Galata Tower was built in 1348 during the Genoese period as part of the defense wall surrounding the Genoese colony of Galata. Standing at about 67 meters (220 ft) tall, it offers a 360-degree panoramic view of Istanbul.</p>
+                                        <p class="mt-2">The tower has served many purposes throughout history, including as a fire watchtower, an astronomical observatory, and now as a museum and tourist attraction.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold">Visitor Tips</h4>
+                                    <ul class="mt-2 text-sm">
+                                        <li>🕘 Arrive early to avoid long queues</li>
+                                        <li>💰 Museum Pass Istanbul valid here</li>
+                                        <li>🔝 Elevator takes you most of the way up</li>
+                                        <li>📸 Best photo opportunities of the Golden Horn</li>
+                                        <li>☕ Café at the top for refreshments</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Istiklal Street -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">10:45 AM - 12:30 PM: Istiklal Street</h3>
+                        <div class="mt-2">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="md:col-span-2">
+                                    <p>Explore this bustling pedestrian street with its mix of modern and traditional shops, historic buildings, and lively atmosphere.</p>
+                                    <ul class="mt-3">
+                                        <li><i class="fas fa-walking text-green-600 mr-2"></i> <strong>Access:</strong> Directly connected to Galata Tower area</li>
+                                        <li><i class="fas fa-ticket-alt text-purple-600 mr-2"></i> <strong>Entrance Fee:</strong> Free</li>
+                                        <li><i class="fas fa-star text-yellow-400 mr-2"></i> <strong>Highlights:</strong> Historic buildings, shops, street performances, nostalgic tram</li>
+                                    </ul>
+                                    <button class="collapsible mt-3 flex items-center text-blue-700 hover:text-blue-900">
+                                        <i class="fas fa-plus-circle mr-2"></i> More About Istiklal Street
+                                    </button>
+                                    <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                        <p>Istiklal Avenue (İstiklal Caddesi) is a 1.4 km pedestrian street in the Beyoğlu district. During the Ottoman period, this area was known as "Grande Rue de Péra" and was the center of European culture in Istanbul.</p>
+                                        <p class="mt-2">The street features numerous boutiques, music stores, bookstores, art galleries, cinemas, theaters, libraries, cafés, restaurants, and historic patisseries like Markiz and İnci.</p>
+                                        <p class="mt-2">Don't miss the nostalgic red tram that runs down the middle of the street, reminiscent of Istanbul's historic tram system.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 p-3 rounded-lg">
+                                    <h4 class="font-semibold">Visitor Tips</h4>
+                                    <ul class="mt-2 text-sm">
+                                        <li>🛒 Great place for souvenir shopping</li>
+                                        <li>🍬 Try authentic Turkish Delight at Hafiz Mustafa</li>
+                                        <li>🎵 Street musicians perform throughout the day</li>
+                                        <li>☕ Historic cafés like Madame Coco worth a visit</li>
+                                        <li>🚶‍♂️ Watch for side streets with hidden gems</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lunch at Cicek Pasaji -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">12:45 PM - 2:15 PM: Lunch at Cicek Pasaji</h3>
+                        <div class="mt-2">
+                            <p>Have lunch in this historic arcade filled with restaurants and bars. It's a beautiful setting to experience Istanbul's lively dining scene.</p>
+                            <ul class="mt-3">
+                                <li><i class="fas fa-map-marker-alt text-red-600 mr-2"></i> <strong>Location:</strong> Off Istiklal Street</li>
+                                <li><i class="fas fa-money-bill-wave text-green-600 mr-2"></i> <strong>Price Range:</strong> 300-600 TL (~$9-18) per person</li>
+                                <li><i class="fas fa-star text-yellow-400 mr-2"></i> <strong>Highlights:</strong> Historic arcade, traditional meyhane (tavern) atmosphere</li>
+                            </ul>
+                            <button class="collapsible mt-3 flex items-center text-blue-700 hover:text-blue-900">
+                                <i class="fas fa-plus-circle mr-2"></i> More About Cicek Pasaji
+                            </button>
+                            <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                <p>Çiçek Pasajı (Flower Passage) was built in 1876 as the Cité de Péra building. After the Russian Revolution in 1917, many impoverished Russian noblewomen sold flowers here, giving the arcade its name.</p>
+                                <p class="mt-2">Today, it houses several traditional restaurants and taverns (meyhanes) that serve Turkish meze, seafood, and rakı (Turkish aniseed spirit).</p>
+                            </div>
+                            <div class="mt-3 p-3 bg-blue-50 rounded-lg">
+                                <p><i class="fas fa-utensils text-blue-700 mr-2"></i> <strong>Menu Recommendations:</strong> Mezes (Turkish appetizers), fresh seafood, köfte (meatballs), and try rakı - the traditional anise-flavored spirit</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Taksim Square -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">2:30 PM - 3:15 PM: Taksim Square</h3>
+                        <div class="mt-2">
+                            <p>Visit this major city square known for its monuments, including the Independence Monument honoring Ataturk, founder of modern Turkey.</p>
+                            <ul class="mt-3">
+                                <li><i class="fas fa-walking text-green-600 mr-2"></i> <strong>Distance:</strong> 15-minute walk from Cicek Pasaji</li>
+                                <li><i class="fas fa-ticket-alt text-purple-600 mr-2"></i> <strong>Entrance Fee:</strong> Free</li>
+                                <li><i class="fas fa-star text-yellow-400 mr-2"></i> <strong>Highlights:</strong> Independence Monument, Republic Monument, cultural center</li>
+                            </ul>
+                            <button class="collapsible mt-3 flex items-center text-blue-700 hover:text-blue-900">
+                                <i class="fas fa-plus-circle mr-2"></i> More About Taksim Square
+                            </button>
+                            <div class="collapsible-content mt-2 pl-4 border-l-2 border-blue-200">
+                                <p>Taksim Square is a major transportation hub and the modern heart of Istanbul. The Republic Monument (1928) in the square commemorates the formation of the Turkish Republic in 1923.</p>
+                                <p class="mt-2">The square is surrounded by restaurants, shops, and hotels, and marks the beginning of the famous Istiklal Street. It's both a popular tourist destination and a traditional gathering point for public celebrations, parades, and demonstrations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Return to Cruise Ship -->
+                    <div class="mb-8 relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold">3:30 PM: Return to Cruise Ship</h3>
+                        <div class="mt-2">
+                            <p>Begin your journey back to the cruise ship, allowing plenty of time before the 5:00 PM departure.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                                <div class="border border-gray-200 rounded-lg p-4">
+                                    <h4 class="font-bold">Option 1: Public Transportation</h4>
+                                    <ol class="mt-2 list-decimal ml-5">
+                                        <li>Take the funicular from Taksim to Kabatas (5 min)</li>
+                                        <li>Transfer to T1 tram to Tophane station (5 min)</li>
+                                        <li>Walk to cruise port (5 min)</li>
+                                    </ol>
+                                    <p class="mt-2"><i class="fas fa-money-bill-wave text-green-600 mr-2"></i> <strong>Total Cost:</strong> 19.80 TL with Istanbulkart</p>
+                                    <p><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Total Time:</strong> Approximately 20-25 minutes</p>
+                                </div>
+                                <div class="border border-gray-200 rounded-lg p-4">
+                                    <h4 class="font-bold">Option 2: Taxi</h4>
+                                    <p class="mt-2">Take a taxi directly from Taksim Square to the cruise port.</p>
+                                    <p class="mt-2"><i class="fas fa-money-bill-wave text-green-600 mr-2"></i> <strong>Estimated Cost:</strong> 150 TL (~$5)</p>
+                                    <p><i class="fas fa-clock text-blue-600 mr-2"></i> <strong>Total Time:</strong> Approximately 15 minutes (traffic dependent)</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+                                <p><i class="fas fa-exclamation-triangle text-yellow-600 mr-2"></i> <strong>Important:</strong> Plan to arrive at the cruise port by 4:00 PM, allowing sufficient time before the 5:00 PM departure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Transportation Section -->
+        <section id="transport" class="mb-10">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Istanbul Transportation Guide</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Istanbulkart -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-blue-600"><i class="fas fa-credit-card mr-2"></i> Istanbulkart</h3>
+                        <div class="mt-3">
+                            <p>The essential public transportation card for Istanbul.</p>
+                            <ul class="mt-3">
+                                <li><strong>Card Cost:</strong> 130 TL (~$4)</li>
+                                <li><strong>Where to Buy:</strong> Terminals, major transit stops, convenience stores</li>
+                                <li><strong>Single Fare:</strong> 9.90 TL with card (25-30 TL without)</li>
+                                <li><strong>Transfer Discount:</strong> Yes, within 2 hours</li>
+                                <li><strong>Coverage:</strong> Trams, buses, metro, ferries, funicular</li>
+                            </ul>
+                            <div class="mt-3 p-3 bg-blue-50 rounded-lg">
+                                <p><i class="fas fa-info-circle text-blue-700 mr-2"></i> One card can be used for up to 5 people. Just tap multiple times for multiple passengers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tram System -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-blue-600"><i class="fas fa-train mr-2"></i> Tram System</h3>
+                        <div class="mt-3">
+                            <p>The T1 tram line is the most useful for tourists.</p>
+                            <ul class="mt-3">
+                                <li><strong>Hours:</strong> 6:00 AM - 12:00 AM</li>
+                                <li><strong>Frequency:</strong> Every 3-5 minutes</li>
+                                <li><strong>Key Stops:</strong>
+                                    <ul class="ml-5 list-disc">
+                                        <li>Tophane (near cruise port)</li>
+                                        <li>Karaköy (Galata area)</li>
+                                        <li>Eminönü (Spice Bazaar)</li>
+                                        <li>Sultanahmet (Blue Mosque, Hagia Sophia)</li>
+                                        <li>Beyazıt (Grand Bazaar)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="mt-3 p-3 bg-blue-50 rounded-lg">
+                                <p><i class="fas fa-info-circle text-blue-700 mr-2"></i> The tram is often faster than taxis during rush hour due to dedicated lanes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Taxi Information -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-blue-600"><i class="fas fa-taxi mr-2"></i> Taxi Information</h3>
+                        <div class="mt-3">
+                            <p>Taxis are plentiful and relatively affordable in Istanbul.</p>
+                            <ul class="mt-3">
+                                <li><strong>Color:</strong> Yellow (official taxis)</li>
+                                <li><strong>Starting Fare:</strong> Approximately 70 TL</li>
+                                <li><strong>Sample Fares:</strong>
+                                    <ul class="ml-5 list-disc">
+                                        <li>Cruise Port to Sultanahmet: 150-200 TL (~$5-7)</li>
+                                        <li>Cruise Port to Taksim: 150 TL (~$5)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Payment:</strong> Most accept cash only (TL)</li>
+                            </ul>
+                            <div class="mt-3 p-3 bg-yellow-50 rounded-lg">
+                                <p><i class="fas fa-exclamation-triangle text-yellow-600 mr-2"></i> <strong>Tip:</strong> Make sure the taxi meter is running and take routes that avoid bridges when possible to reduce tolls.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Walking Information -->
+                <div class="mt-6 border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-xl font-bold text-blue-600"><i class="fas fa-walking mr-2"></i> Walking Distances</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                        <div>
+                            <h4 class="font-bold">From Cruise Port (Galataport):</h4>
+                            <ul class="mt-2 space-y-1">
+                                <li><strong>To Galata Tower:</strong> 10-15 minute walk</li>
+                                <li><strong>To Tophane Tram Station:</strong> 5 minute walk</li>
+                                <li><strong>To Istiklal Street:</strong> 15-20 minute walk</li>
+                                <li><strong>To Sultanahmet:</strong> 40-45 minute walk (not recommended)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">In Sultanahmet (Historical District):</h4>
+                            <ul class="mt-2 space-y-1">
+                                <li><strong>Hagia Sophia to Blue Mosque:</strong> 5 minute walk</li>
+                                <li><strong>Blue Mosque to Basilica Cistern:</strong> 5 minute walk</li>
+                                <li><strong>Basilica Cistern to Topkapi Palace:</strong> 10 minute walk</li>
+                                <li><strong>Topkapi Palace to Grand Bazaar:</strong> 15 minute walk</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+                        <p><i class="fas fa-info-circle text-blue-700 mr-2"></i> Istanbul has many hills and cobblestone streets. Wear comfortable walking shoes and be prepared for some uphill walking, especially around Galata/Beyoglu areas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tips and Recommendations -->
+        <section id="tips" class="mb-10">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Travel Tips & Recommendations</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Money & Payments -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-blue-600"><i class="fas fa-money-bill-wave mr-2"></i> Money & Payments</h3>
+                        <ul class="mt-3 space-y-2">
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Currency:</strong> Turkish Lira (TL). $1 USD ≈ 33 TL (May 2025)</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>ATMs:</strong> Widely available and often offer better rates than currency exchange offices</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Credit Cards:</strong> Widely accepted in shops, restaurants, and attractions, but carry cash for small vendors</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Tipping:</strong> 10-15% in restaurants; round up taxi fares</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Haggling:</strong> Expected in bazaars and markets, but not in established shops</li>
+                        </ul>
+                        <div class="mt-3 p-3 bg-blue-50 rounded-lg">
+                            <p><i class="fas fa-info-circle text-blue-700 mr-2"></i> Notify your bank of your travel plans to avoid card blocks on foreign transactions.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Cultural Tips -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-blue-600"><i class="fas fa-hands mr-2"></i> Cultural Tips</h3>
+                        <ul class="mt-3 space-y-2">
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Dress Code:</strong> Modest dress for mosques (covered shoulders/knees); women need head covering</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Photography:</strong> Permitted in most places; avoid photographing military sites</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Prayer Times:</strong> Mosques close to visitors during prayer (5 times daily)</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Turkish Tea:</strong> Accepting tea when offered is a friendly gesture</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Greeting:</strong> A simple "Merhaba" (Hello) is appreciated</li>
+                        </ul>
+                        <div class="mt-3 p-3 bg-blue-50 rounded-lg">
+                            <p><i class="fas fa-info-circle text-blue-700 mr-2"></i> Turkish people are known for their hospitality. Don't be surprised by friendly invitations or offers of assistance.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Time-Saving Tips -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-blue-600"><i class="fas fa-clock mr-2"></i> Time-Saving Tips</h3>
+                        <ul class="mt-3 space-y-2">
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Museum Pass Istanbul:</strong> Consider purchasing if visiting multiple museums (2500 TL, ~$75)</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Advance Tickets:</strong> Book online for Topkapi Palace and Basilica Cistern</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Early Starts:</strong> Begin sightseeing early to avoid crowds</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Visiting Order:</strong> This itinerary minimizes travel time between attractions</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Cruise Return:</strong> Allow at least 60 minutes before departure</li>
+                        </ul>
+                        <div class="mt-3 p-3 bg-blue-50 rounded-lg">
+                            <p><i class="fas fa-info-circle text-blue-700 mr-2"></i> Security checks at major attractions can add wait time. Pack light and avoid bringing large bags.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Practical Information -->
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <h3 class="text-xl font-bold text-blue-600"><i class="fas fa-info-circle mr-2"></i> Practical Information</h3>
+                        <ul class="mt-3 space-y-2">
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Language:</strong> Turkish; English widely spoken in tourist areas</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Wi-Fi:</strong> Available in most cafés, restaurants, and some public spaces</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Toilets:</strong> Public toilets at major attractions (small fee); free in restaurants and cafés</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Water:</strong> Bottled water recommended; avoid tap water</li>
+                            <li><i class="fas fa-check-circle text-green-600 mr-2"></i> <strong>Emergency:</strong> Dial 112 for all emergency services</li>
+                        </ul>
+                        <div class="mt-3 p-3 bg-blue-50 rounded-lg">
+                            <p><i class="fas fa-info-circle text-blue-700 mr-2"></i> Download offline maps and translation apps before your trip to navigate more easily.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Must-Try Foods -->
+                <div class="mt-6 border border-gray-200 rounded-lg p-4">
+                    <h3 class="text-xl font-bold text-blue-600"><i class="fas fa-utensils mr-2"></i> Must-Try Turkish Foods</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+                        <div>
+                            <h4 class="font-bold">Street Food & Quick Bites</h4>
+                            <ul class="mt-2 list-disc ml-5">
+                                <li>Simit (Turkish bagel)</li>
+                                <li>Döner Kebab</li>
+                                <li>Börek (savory pastry)</li>
+                                <li>Kumpir (loaded baked potato)</li>
+                                <li>Midye Dolma (stuffed mussels)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Main Dishes</h4>
+                            <ul class="mt-2 list-disc ml-5">
+                                <li>Iskender Kebab</li>
+                                <li>Köfte (meatballs)</li>
+                                <li>Pide (Turkish pizza)</li>
+                                <li>Manti (Turkish dumplings)</li>
+                                <li>Fresh seafood (balık)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Desserts & Drinks</h4>
+                            <ul class="mt-2 list-disc ml-5">
+                                <li>Baklava</li>
+                                <li>Turkish Delight (lokum)</li>
+                                <li>Turkish Tea (çay)</li>
+                                <li>Turkish Coffee</li>
+                                <li>Ayran (yogurt drink)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>Istanbul 2-Day Cruise Itinerary - May 20-21, 2025</p>
+            <p class="mt-2">Created for cruise ship passengers with ❤️</p>
+            <p class="mt-4 text-sm">Prices, opening hours, and other information current as of May 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Collapsible content
+        document.addEventListener('DOMContentLoaded', function() {
+            const collapsibles = document.querySelectorAll('.collapsible');
+            
+            collapsibles.forEach(button => {
+                button.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    this.classList.toggle('active');
+                    
+                    if (content.classList.contains('active')) {
+                        content.classList.remove('active');
+                        this.innerHTML = this.innerHTML.replace('fa-minus-circle', 'fa-plus-circle');
+                    } else {
+                        content.classList.add('active');
+                        this.innerHTML = this.innerHTML.replace('fa-plus-circle', 'fa-minus-circle');
+                    }
+                });
+            });
+            
+            // Tabs for map
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('border-b-2', 'border-blue-500'));
+                    // Add active class to clicked tab
+                    this.classList.add('border-b-2', 'border-blue-500');
+                    
+                    // Get tab id
+                    const tabId = this.id;
+                    const contentId = tabId.replace('tab-', 'map-');
+                    
+                    // Hide all tab contents
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Show the relevant content
+                    document.getElementById(contentId).classList.add('active');
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
