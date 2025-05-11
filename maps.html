@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Istanbul 2-Day Cruise Itinerary - May 20-21, 2025</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    .timeline-container {
+      position: relative;
+    }
+    .timeline-line {
+      position: absolute;
+      left: 12px;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: #3B82F6;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: 0;
+      top: 24px;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background-color: #3B82F6;
+    }
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    .collapsible-content.active {
+      max-height: 1000px;
+    }
+    .highlight {
+      background-color: rgba(59, 130, 246, 0.1);
+      border-left: 4px solid #3B82F6;
+    }
+    .tab {
+      cursor: pointer;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    @media print {
+      .no-print {
+        display: none;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+    }
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .map-container {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-blue-700 text-white py-6 sticky-header">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold text-center">Istanbul 2-Day Cruise Itinerary</h1>
+      <p class="text-center text-xl mt-2">May 20-21, 2025</p>
+
+      <!-- Navigation menu -->
+      <nav class="mt-4 no-print">
+        <ul class="flex flex-wrap justify-center space-x-1 md:space-x-4">
+          <li><a href="#overview" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Overview</a></li>
+          <li><a href="#map" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Map</a></li>
+          <li><a href="#day1" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Day 1</a></li>
+          <li><a href="#day2" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Day 2</a></li>
+          <li><a href="#transport" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Transportation</a></li>
+          <li><a href="#tips" class="px-3 py-2 bg-blue-800 rounded-lg hover:bg-blue-900 inline-block">Tips</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-6">
+    <!-- Overview Section -->
+    <section id="overview" class="mb-10">
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700">Trip Overview</h2>
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full md:w-2/3 pr-0 md:pr-4">
+            <div class="highlight p-4 mb-4">
+              <h3 class="font-bold text-lg">Cruise Port Information</h3>
+              <p>
+                Your ship will dock at <strong>Galataport Istanbul</strong>, the main cruise terminal
+                located in the Karaköy neighborhood. This modern terminal is conveniently located
+                near many transportation options.
+              </p>
+            </div>
+
+            <h3 class="font-bold text-lg">Itinerary Highlights</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+              <div class="border border-gray-200 rounded-lg p-4">
+                <h4 class="font-bold text-blue-600">Day 1: Historical Peninsula</h4>
+                <ul class="list-disc ml-5 mt-2">
+                  <li>Hagia Sophia</li>
+                  <li>Blue Mosque</li>
+                  <li>Basilica Cistern</li>
+                  <li>Topkapi Palace</li>
+                  <li>Grand Bazaar</li>
+                </ul>
+              </div>
+              <div class="border border-gray-200 rounded-lg p-4">
+                <h4 class="font-bold text-blue-600">Day 2: Beyoglu & Modern Istanbul</h4>
+                <ul class="list-disc ml-5 mt-2">
+                  <li>Galata Tower</li>
+                  <li>Istiklal Street</li>
+                  <li>Cicek Pasaji (Lunch)</li>
+                  <li>Taksim Square</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 mt-4 md:mt-0">
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <h3 class="font-bold text-lg">Important Details</h3>
+              <ul class="mt-2 space-y-2">
+                <li><i class="fas fa-ship text-blue-700 mr-2"></i> <strong>Arrival:</strong> May 20, 2025 at 8:00 AM</li>
+                <li><i class="fas fa-ship text-blue-700 mr-2"></i> <strong>Departure:</strong> May 21, 2025 at 5:00 PM</li>
+                <li><i class="fas fa-map-marker-alt text-blue-700 mr-2"></i> <strong>Port:</strong> Galataport Istanbul</li>
+                <li><i class="fas fa-money-bill-wave text-blue-700 mr-2"></i> <strong>Currency:</strong> Turkish Lira (TL)</li>
+                <li><i class="fas fa-language text-blue-700 mr-2"></i> <strong>Language:</strong> Turkish, English widely spoken</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="mb-10">
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700">Interactive Map</h2>
+        <p class="mb-4">
+          Below are the maps showing the key locations for Day 1 and Day 2 of the itinerary.
+          Click the corresponding tab to see its map.
+        </p>
+
+        <!-- Tab navigation (2 tabs now) -->
+        <div class="no-print flex border-b border-gray-200 mb-4">
+          <!-- Day 1 tab: set as active by default -->
+          <div id="tab-day1" class="tab px-4 py-2 font-semibold border-b-2 border-blue-500">
+            Day 1
+          </div>
+          <div id="tab-day2" class="tab px-4 py-2 font-semibold">Day 2</div>
+        </div>
+
+        <!-- Tab content -->
+        <!-- DAY 1 embed (active by default) -->
+        <div id="map-day1" class="tab-content active">
+          <!-- Example embed: Your custom My Maps link for Day 1 -->
+          <iframe
+            class="map-container border-0"
+            allowfullscreen=""
+            src="https://www.google.com/maps/d/u/0/embed?mid=15ztmLkGhHpBxD_8rrIpaiHBQD84bcXQ&amp;ehbc=2E312F"
+          ></iframe>
+          <div class="mt-4">
+            <h3 class="font-bold text-lg text-blue-600">Day 1: Historical Peninsula</h3>
+            <p>
+              The T1 tram line connects all these attractions. Take the tram from Tophane station
+              near the cruise port to Sultanahmet station.
+            </p>
+            <div class="mt-2 p-3 bg-blue-50 rounded-lg">
+              <p>
+                <i class="fas fa-info-circle text-blue-700 mr-2"></i>
+                Sultanahmet district is compact and walkable. Most attractions are within 5-10
+                minutes walking distance of each other.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAY 2 embed -->
+        <div id="map-day2" class="tab-content">
+          <!-- Example Day 2 map pointing to Galata Tower -->
+          <iframe
+            class="map-container border-0"
+            allowfullscreen=""
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.7237012227444!2d28.975402!3d41.027058599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9a15781f1dd%3A0x91d8d5cb14bde652!2sGalata%20Tower!5e0!3m2!1sen!2str!4v1684600761441!5m2!1sen!2str"
+          ></iframe>
+          <div class="mt-4">
+            <h3 class="font-bold text-lg text-blue-600">Day 2: Beyoglu & Modern Istanbul</h3>
+            <p>
+              This area is easily accessible from the cruise port. Galata Tower is just a 10-15
+              minute walk, and Istiklal Street connects to Taksim Square.
+            </p>
+            <div class="mt-2 p-3 bg-blue-50 rounded-lg">
+              <p>
+                <i class="fas fa-info-circle text-blue-700 mr-2"></i>
+                There's a historic red tram that runs along Istiklal Street, but the area is best
+                explored on foot.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Day 1 Itinerary -->
+    <section id="day1" class="mb-10">
+      <!-- Your existing Day 1 itinerary content here -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700">Day 1: Historical Peninsula (May 20)</h2>
+        <div class="timeline-container pl-10 relative">
+          <div class="timeline-line"></div>
+          <!-- All your Day 1 itinerary timeline items -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Day 2 Itinerary -->
+    <section id="day2" class="mb-10">
+      <!-- Your existing Day 2 itinerary content here -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700">Day 2: Beyoglu & Modern Istanbul (May 21)</h2>
+        <div class="timeline-container pl-10 relative">
+          <div class="timeline-line"></div>
+          <!-- All your Day 2 itinerary timeline items -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Transportation Section -->
+    <section id="transport" class="mb-10">
+      <!-- Your existing transportation section content -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700">Istanbul Transportation Guide</h2>
+        <!-- ... existing details ... -->
+      </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="mb-10">
+      <!-- Your existing tips/recommendations content -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold mb-4 text-blue-700">Travel Tips & Recommendations</h2>
+        <!-- ... existing details ... -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>Istanbul 2-Day Cruise Itinerary - May 20-21, 2025</p>
+      <p class="mt-2">Created for cruise ship passengers with ❤️</p>
+      <p class="mt-4 text-sm">
+        Prices, opening hours, and other information current as of May 2025
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Collapsible content
+    document.addEventListener('DOMContentLoaded', function () {
+      const collapsibles = document.querySelectorAll('.collapsible');
+
+      collapsibles.forEach((button) => {
+        button.addEventListener('click', function () {
+          const content = this.nextElementSibling;
+          this.classList.toggle('active');
+
+          if (content.classList.contains('active')) {
+            content.classList.remove('active');
+            this.innerHTML = this.innerHTML.replace('fa-minus-circle', 'fa-plus-circle');
+          } else {
+            content.classList.add('active');
+            this.innerHTML = this.innerHTML.replace('fa-plus-circle', 'fa-minus-circle');
+          }
+        });
+      });
+
+      // Tabs for map
+      const tabs = document.querySelectorAll('.tab');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      // Make Day 1 active by default
+      // (tab-day1 has a default CSS class: border-b-2 border-blue-500, tab-content #map-day1 is active)
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', function () {
+          // Remove active class from all tabs
+          tabs.forEach((t) => t.classList.remove('border-b-2', 'border-blue-500'));
+          // Add active class to clicked tab
+          this.classList.add('border-b-2', 'border-blue-500');
+
+          // Get tab id
+          const tabId = this.id;
+          const contentId = tabId.replace('tab-', 'map-');
+
+          // Hide all tab contents
+          tabContents.forEach((content) => content.classList.remove('active'));
+
+          // Show the relevant content
+          document.getElementById(contentId).classList.add('active');
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
